@@ -19,3 +19,9 @@ function calculator(a, b, operator) {
 function doubleChar(str) {
   return str.split('').map(char => char + char).join('');
 }
+
+// Create a function to validate email and password.
+
+function validate(email, password) {
+  return /^[a-z0-9]+@[a-z0-9]+\.[a-z0-9]+$/i.test(email) && /^[a-z0-9]{6,12}$/i.test(password);
+}
